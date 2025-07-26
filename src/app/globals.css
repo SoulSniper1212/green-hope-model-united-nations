@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+body {
+  background-color: #f0f4f8;
+  font-family: 'Georgia', serif;
+  overflow-x: hidden;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee__content {
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee__item {
+  display: inline-block;
+  margin-right: 20px;
+  width: 300px;
+  vertical-align: top;
+  transition: transform 0.3s ease;
+}
+
+.marquee__item:hover {
+  transform: scale(1.05);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes big-bounce {
+  0% {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(25px);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-big-bounce {
+  animation: big-bounce 1s forwards;
+}
