@@ -172,7 +172,7 @@ export default function Home() {
 
       <footer className="bg-white mt-12 py-6">
         <div className="container mx-auto text-center text-gray-600">
-          <p>"Chaos comes without Peace. Peace does not come without Chaos" - Alex Robinson</p>
+          <p>&quot;Chaos comes without Peace. Peace does not come without Chaos&quot; - Alex Robinson</p>
         </div>
       </footer>
     </div>
