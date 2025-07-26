@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link"; // Import Link
 import { useState } from "react";
 
 export default function Home() {
@@ -63,10 +64,10 @@ export default function Home() {
     <div className="bg-gray-100 text-gray-800">
       <header className="bg-white shadow-md px-4 py-3">
         <div className="flex justify-between items-center">
-          <a href="/" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image src="/images/logo.jpg" alt="GH Model UN Logo" width={50} height={50} className="mr-3" />
             <h1 className="text-3xl font-bold text-gray-900">GH Model UN</h1>
-          </a>
+          </Link>
           <nav>
             <a href="mailto:ghhsmodelun@gmail.com" className="text-gray-600 hover:text-gray-900 mx-2">Email</a>
             <a href="https://www.instagram.com/ghmodelun" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 mx-2">Instagram</a>
