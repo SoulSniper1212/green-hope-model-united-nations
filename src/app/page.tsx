@@ -99,7 +99,7 @@ export default function Home() {
               {conferenceText}
             </figcaption>
           </div>
-          <div className="text-center md:text-left mt-8 md:mt-0">
+          <div className="text-center md:text-left mt-4 md:-mt-30">
             <h2 className="text-3xl sm:text-4xl font-semibold text-blue-400">Welcome to GH Model UN</h2>
             <div className="mt-4 max-w-3xl mx-auto">
               <h3 className="text-lg sm:text-xl font-bold">GH Model UN Mission Statement</h3>
